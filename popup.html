@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn SmartConnect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+</head>
+
+<body>
+    <div class="popup-container">
+        <div class="logo-container">
+            <img id="logo" alt="Logo" class="logo" src="./assets/logo.png">
+            <h1 class="title">LinkedIn SmartConnect</h1>
+        </div>
+        <div id="status" class="status">Checking login status...</div>
+        <button id="signInButton" class="btn" style="display: none;">
+            <i class="fas fa-sign-in-alt"></i>SignIn
+        </button>
+        <div id="welcomeMessage" class="welcome-message" style="display: none;">
+            <p>Welcome back!</p>
+            <button id="dashboardButton" class="btn">
+                <i class="fas fa-tachometer-alt"></i> Go to Dashboard
+            </button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

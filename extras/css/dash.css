@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#logout {
+  display: block;
+  margin: 0 auto;
+}
+
+.connection-group {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.connection-group h2 {
+  cursor: pointer;
+  margin: 0;
+}
+
+.connections-list {
+  padding: 10px;
+}
+
+.connections-list.hidden {
+  display: none;
+}
+
+.connection {
+  border-top: 1px solid #ccc;
+  padding: 5px 0;
+}
+
+.connection a {
+  font-weight: bold;
+  color: #0073b1;
+  text-decoration: none;
+}
+
+.connection a:hover {
+  text-decoration: underline;
+}
+
+.connection p {
+  margin: 5px 0;
+}

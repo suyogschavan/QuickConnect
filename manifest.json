@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Connection Extension",
+  "version": "1.0",
+  "host_permissions": ["<all_urls>"],
+  "permissions": ["tabs", "activeTab", "scripting", "cookies", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.linkedin.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": ["<all_urls>"],
+      "resources": ["assets/logo.png"]
+    }
+  ],
+  "action": {
+    "default_icon": "./assets/logo.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
